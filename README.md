@@ -28,7 +28,7 @@ Por este motivo, se aconseja encarecidamente utilizar el entorno propuesto, espe
 
 ## 🧠 Idea clave (muy importante)
 
-> **El código se ejecuta en la nube, no en tu ordenador.**
+> **Con GitHub Codespaces el código se ejecuta en la nube, no en tu ordenador.**
 
 Aunque utilices VS Code instalado en tu equipo, los archivos y el Python que se usan  
 **están en GitHub Codespaces**.
