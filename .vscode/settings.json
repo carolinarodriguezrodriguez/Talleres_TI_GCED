@@ -1,26 +1,43 @@
 {
-  // Python envs (opcional; puedes quitarlo si no lo necesitas)
+  // -----------------------------
+  // Python envs (opcional)
+  // -----------------------------
   "python-envs.defaultEnvManager": "ms-python.python:system",
   "python-envs.pythonProjects": [],
 
-  // Mantener Copilot inline (autocompletado)
+  // -----------------------------
+  // Copilot: mantener inline, quitar chat/agentes
+  // -----------------------------
   "github.copilot.enable": true,
   "github.copilot.editor.enableAutoCompletions": true,
-
-  // Quitar el panel lateral de Copilot Chat
   "github.copilot.chat.enabled": false,
-
-  // Desactivar agentes en el sistema de Chat de VS Code
   "chat.agent.enabled": false,
   "chat.viewSessions.enabled": false,
 
-  // Quitar el “Delegate to agent” (y cualquier otro CodeLens) SOLO en Python
+  // -----------------------------
+  // Quitar “Delegate to agent” (y demás CodeLens) en Python
+  // -----------------------------
   "[python]": {
     "editor.codeLens": false
-  },
+  }
 
-  // (Opcional) si también te aparece dentro de notebooks .ipynb, activa esto:
+  // (Opcional) si también te aparece en notebooks .ipynb, descomenta:
+  // ,
   // "[jupyter]": {
   //   "editor.codeLens": false
   // }
+
+  // -----------------------------
+  // UI: editor más “limpio” al abrir Codespaces
+  // Nota: VS Code puede recordar el último estado del usuario.
+  // -----------------------------
+  ,
+  "workbench.activityBar.visible": false,
+  "workbench.startupEditor": "none",
+  "explorer.openEditors.visible": 0,
+
+  // Evitar que paneles se abran “solos”
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.panel.opensMaximized": false,
+  "workbench.editor.restoreViewState": false
 }
